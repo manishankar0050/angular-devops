@@ -18,8 +18,8 @@ phases:
       - npm run test:ci
   post_build:
     commands:
-      - aws s3 rm s3://bbx-sample --recursive
-      - aws s3 cp dist/angular-devops/ s3://bbx-sample --recursive
+      - aws s3 rm s3://bbx-hello --recursive
+      - aws s3 cp dist/angular-devops/ s3://bbx-hello --recursive
 
 artifacts:
   files:
